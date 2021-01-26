@@ -9,5 +9,9 @@ test('Add first name and last name', () => {
 });
 
 test('Should be Null', () => {
-  expect(functions.isNull()).toBe(null);
+  expect(functions.isNull()).toBeNull();
+});
+
+test('Should be falsy', () => {
+  expect(functions.checkValue(null)).toBeFalsy();
 });
