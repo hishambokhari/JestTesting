@@ -7,3 +7,7 @@ test('Add 2 + 2 to equal 4', () => {
 test('Add first name and last name', () => {
   expect(functions.name("Hisham","Bokhari")).toBe("Hisham Bokhari");
 });
+
+test('Should be Null', () => {
+  expect(functions.isNull()).toBe(null);
+});
